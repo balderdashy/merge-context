@@ -1,6 +1,6 @@
 {
   "name": "extend-context",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "like _.bind() or _.bindAll() but extends 'this' instead of replacing it",
   "main": "index.js",
   "scripts": {
