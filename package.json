@@ -1,5 +1,5 @@
 {
-  "name": "extendContext",
+  "name": "extend-context",
   "version": "0.0.0",
   "description": "like _.bind() or _.bindAll() but extends 'this' instead of replacing it",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mikermcneil/extendContext.git"
+    "url": "https://github.com/mikermcneil/extend-context.git"
   },
   "keywords": [
     "extend",
@@ -21,7 +21,7 @@
   "author": "Mike McNeil",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mikermcneil/extendContext/issues"
+    "url": "https://github.com/mikermcneil/extend-context/issues"
   },
-  "homepage": "https://github.com/mikermcneil/extendContext"
+  "homepage": "https://github.com/mikermcneil/extend-context"
 }
