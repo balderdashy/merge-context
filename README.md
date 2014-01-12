@@ -1,9 +1,8 @@
-extendContext
-=============
+# extendContext
 
-like _.bind() and _.bindAll() but it extends the this context instead of replacing it
+like _.bind() and _.bindAll() but extends the context (`this`) instead of replacing it
 
-Usage:
+### Usage:
 
 ```javascript
 var extendContext = require('extendContext');
@@ -24,3 +23,30 @@ someFunction = extendContext(someFunction, {
 // someFunction();
 // $ true
 ```
+
+##### To do an object of functions all at once (like `_.bindAll`)
+```javascript
+var someObject = {
+  foo: function () { ... },
+  bar: function () { ... },
+  baz: function () { ... }
+};
+someObject = extendContext.all(someObject, {
+  sails: require('sails')
+});
+
+// Now I can do:
+someObject.foo();
+someObject.bar();
+someObject.baz();
+
+// And they'll all have access to `sails`.
+
+
+```
+
+
+## License
+
+MIT
+c. Mike McNeil 2014
