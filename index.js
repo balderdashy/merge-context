@@ -34,8 +34,7 @@ function extendContextAll (objOfFns, newCtx) {
  */
 function extendContext (fn, newCtx) {
 	return function bound () {
-		newCtx = _.merge(newCtx, this);
 		var args = Array.prototype.slice.call(arguments);
-		fn.apply(_.extend(this, newCtx), args);
+		fn.apply(_.merge(this, newCtx), args);
 	};
 }

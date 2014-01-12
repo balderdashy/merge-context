@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/mikermcneil/extend-context/issues"
   },
-  "homepage": "https://github.com/mikermcneil/extend-context"
+  "homepage": "https://github.com/mikermcneil/extend-context",
+  "dependencies": {
+    "lodash": "~2.4.1"
+  }
 }
