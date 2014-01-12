@@ -1,11 +1,11 @@
-# extendContext
+# extend-context
 
 like _.bind() and _.bindAll() but extends the context (`this`) instead of replacing it
 
 ### Usage:
 
 ```javascript
-var extendContext = require('extendContext');
+var extendContext = require('extend-context');
 
 var someFunction = function () { console.log(this.foo); }
 
