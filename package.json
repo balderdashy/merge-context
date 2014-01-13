@@ -1,5 +1,5 @@
 {
-  "name": "extend-context",
+  "name": "merge-context",
   "version": "0.0.3",
   "description": "like _.bind() or _.bindAll() but extends 'this' instead of replacing it",
   "main": "index.js",
@@ -8,22 +8,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mikermcneil/extend-context.git"
+    "url": "https://github.com/mikermcneil/merge-context.git"
   },
   "keywords": [
     "extend",
+    "mergectx",
+    "merge",
+    "merge context",
+    "merge this"
     "bindAll",
     "this",
-    "context",
-    "merge",
-    "scope"
+    "context"
   ],
   "author": "Mike McNeil",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mikermcneil/extend-context/issues"
+    "url": "https://github.com/mikermcneil/merge-context/issues"
   },
-  "homepage": "https://github.com/mikermcneil/extend-context",
+  "homepage": "https://github.com/mikermcneil/merge-context",
   "dependencies": {
     "lodash": "~2.4.1"
   }
