@@ -11,14 +11,14 @@
     "url": "https://github.com/mikermcneil/merge-context.git"
   },
   "keywords": [
-    "extend",
-    "mergectx",
     "merge",
-    "merge context",
-    "merge this"
-    "bindAll",
     "this",
     "context"
+    "mergectx",
+    "extend",
+    "bindAll",
+    "bind",
+    "lodash"
   ],
   "author": "Mike McNeil",
   "license": "MIT",
