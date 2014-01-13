@@ -13,7 +13,7 @@
   "keywords": [
     "merge",
     "this",
-    "context"
+    "context",
     "mergectx",
     "extend",
     "bindAll",
