@@ -1,11 +1,11 @@
-# extend-context
+# merge-context
 
 like _.bind() and _.bindAll() but extends the context (`this`) instead of replacing it
 
 ### Usage:
 
 ```javascript
-var mergeCtx = require('extend-context');
+var mergeCtx = require('merge-context');
 
 var someFunction = function () { console.log(this.foo); }
 
@@ -28,7 +28,7 @@ someFunction = mergeCtx(someFunction, {
 To do an object of functions all at once (like `_.bindAll`)
 
 ```javascript
-var mergeCtx = require('extend-context');
+var mergeCtx = require('merge-context');
 
 var someObject = {
   foo: function () { ... },
