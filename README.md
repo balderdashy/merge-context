@@ -2,7 +2,13 @@
 
 like _.bind() and _.bindAll() but extends the context (`this`) instead of replacing it
 
-### Usage:
+### Install
+
+```sh
+$ npm install merge-context
+```
+
+### Usage
 
 ```javascript
 var mergeCtx = require('merge-context');
@@ -50,7 +56,6 @@ someObject.baz();
 ```
 
 
-## License
+### License
 
-MIT
-c. Mike McNeil 2014
+MIT c. Mike McNeil 2014
