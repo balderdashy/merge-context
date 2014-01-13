@@ -58,4 +58,4 @@ someObject.baz();
 
 ### License
 
-MIT c. Mike McNeil 2014
+MIT &copy; Mike McNeil 2014
