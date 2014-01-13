@@ -5,14 +5,14 @@ like _.bind() and _.bindAll() but extends the context (`this`) instead of replac
 ### Usage:
 
 ```javascript
-var extendContext = require('extend-context');
+var mergeCtx = require('extend-context');
 
 var someFunction = function () { console.log(this.foo); }
 
 // someFunction();
 // $ undefined
 
-someFunction = extendContext(someFunction, {
+someFunction = mergeCtx(someFunction, {
   foo: true
   'and you know, the stuff': 82385235,
   I: 93529523,
@@ -24,14 +24,18 @@ someFunction = extendContext(someFunction, {
 // $ true
 ```
 
-##### To do an object of functions all at once (like `_.bindAll`)
+### `.all( objOfFunctions, stuff )`
+To do an object of functions all at once (like `_.bindAll`)
+
 ```javascript
+var mergeCtx = require('extend-context');
+
 var someObject = {
   foo: function () { ... },
   bar: function () { ... },
   baz: function () { ... }
 };
-someObject = extendContext.all(someObject, {
+someObject = mergeCtx.all(someObject, {
   sails: require('sails')
 });
 
@@ -40,7 +44,7 @@ someObject.foo();
 someObject.bar();
 someObject.baz();
 
-// And they'll all have access to `sails`.
+// And they'll all have access to `this.sails` in there.
 
 
 ```
